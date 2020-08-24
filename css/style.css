@@ -1,0 +1,94 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+section
+{  
+    position: relative;
+    widows: 100%;
+    min-height: 100vh;
+    background-color: #252934;
+}
+section .content
+{
+    position: relative;
+    padding: 100px 50px 100px 150px;
+}
+section .content h2
+{
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 800;
+    text-align: center;
+}
+section .content p
+{
+    max-width: 1000px;
+}
+
+#myName
+{ 
+    background-image: linear-gradient(45deg, #1dcdfe, #34f5c5);
+    background-repeat: repeat;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section .menu
+{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    background-color:#1B242F;
+}
+
+section .menu a
+{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    color:white;
+    transition:  all 0.5s ease;
+}
+
+section .menu a:hover
+{
+   color: #1dcdfe;
+}
+
+section .content .button
+{
+    color: white;
+    background-color: transparent;
+    display: block;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    max-width: 200px;
+    font-size: 30px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+section .content .button a{
+    color:white;
+    text-decoration: none;
+}
+section .content .button:hover
+{
+    background-color: red;
+    border-color: red;
+}
