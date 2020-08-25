@@ -58,6 +58,7 @@ section .menu a {
     text-decoration: none;
     color: white;
     font-size: 20px;
+    transition: color 0.5s ease-in;
 }
 
 section .menu a:hover {
@@ -97,7 +98,7 @@ section .menu a:hover {
         z-index: 1;
         background-color: #1B242F;
         padding: 7px;
-        transition: height 0.5s ease-in ;
+        transition: height 0.5s ease-in;
     }
 
     .menuresponsive a {
@@ -108,7 +109,8 @@ section .menu a:hover {
         font-size: 20px;
         transition: color 0.5s ease-in;
     }
-    .menuresponsive a:hover{
+
+    .menuresponsive a:hover {
         color: #1dcdfe;
     }
 }
