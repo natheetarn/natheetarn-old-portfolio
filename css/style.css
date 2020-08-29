@@ -3,16 +3,26 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    
 }
 
+html{
+    scroll-behavior: smooth;
+}
+body
+{
+    display:flex;
+    flex-direction: column;
+    background: -webkit-linear-gradient(to right, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+   
 
 
     
@@ -48,8 +58,7 @@ section .menu {
     height: 60px;
     z-index: 1;
     /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 
     transition: height 0.5s ease-in;
@@ -61,7 +70,7 @@ section .menu a {
     text-align: center;
     padding: 14px;
     text-decoration: none;
-    color: white;
+    color: rgba(0, 0, 0, 0.5);
     font-size: 20px;
     transition: color 0.5s ease-in;
 }
@@ -101,8 +110,7 @@ section .menu a:hover {
         width: 100%;
         height: 180px;
         z-index: 1;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 
         padding: 7px;
@@ -151,5 +159,56 @@ section .content .buttonToAbout:hover {
 }
 
 .about{
-    background-color:#252934;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 100px;
+    height: 100vh;
+    
 }
+
+.about h1{
+    color: white;
+     font-size:4vmax;
+     font-weight: 800;
+}
+
+.aboutText{
+    padding: 5vh 10vw 10vh 10vw;
+    color:white;
+    line-height: 1.3;
+    font-size :3vmin;
+    font-weight: 600;
+}
+
+/* 
+    project button but so buggy decided to remove and use scroll instead;
+.buttonToProject {
+    color: white;
+    background-color: transparent;
+    display: block;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    max-width: 200px;
+    font-size: 5vh;
+    padding: 1vh;
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    border-radius: 25px;
+}
+
+.buttonToProject a {
+    color: white;
+    text-decoration: none;
+}
+
+.buttonToProject:hover {
+    background-color: #1dcdfe;
+    border-color: #1dcdfe;
+}
+
+*/ 
