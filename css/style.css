@@ -11,18 +11,24 @@ section {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #252934;
-}
+    background: #556270;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-section .content {
-    position: relative;
-    margin-top: 100px;
+
+    
+   
+    
+}
+section .content { 
+    position: absolute;
+    
 }
 
 section .content h2 {
     color: #fff;
     font-size: 5vmax;
-    font-weight: 800;
+    font-weight: 1000;
     text-align: center;
 }
 
@@ -31,11 +37,7 @@ section .content p {
 }
 
 #myName {
-    background-image: linear-gradient(45deg, #1dcdfe, #34f5c5);
-    background-repeat: repeat;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 6.8vmax;
 }
 
 section .menu {
@@ -46,7 +48,11 @@ section .menu {
     width: 100%;
     height: 60px;
     z-index: 1;
-    background-color: #1B242F;
+    background: #556270;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     transition: height 0.5s ease-in;
 }
 
@@ -69,7 +75,7 @@ section .menu a:hover {
     display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .menu a:not(:first-child) {
         display: none;
     }
@@ -87,7 +93,7 @@ section .menu a:hover {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .menuresponsive {
         position: fixed;
         right: 0;
@@ -96,7 +102,11 @@ section .menu a:hover {
         width: 100%;
         height: 180px;
         z-index: 1;
-        background-color: #1B242F;
+        background: #556270;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
         padding: 7px;
         transition: height 0.5s ease-in;
     }
@@ -115,7 +125,7 @@ section .menu a:hover {
     }
 }
 
-section .content .button {
+section .content .buttonToAbout {
     color: white;
     background-color: transparent;
     display: block;
@@ -129,14 +139,19 @@ section .content .button {
     margin-top: 70px;
     position: relative;
     transition: 0.5s ease-in-out;
+    border-radius: 25px;
 }
 
-section .content .button a {
+section .content .buttonToAbout a {
     color: white;
     text-decoration: none;
 }
 
-section .content .button:hover {
-    background-color: red;
-    border-color: red;
+section .content .buttonToAbout:hover {
+    background-color: #1dcdfe;
+    border-color: #1dcdfe;
+}
+
+.about{
+    background-color:#252934;
 }
