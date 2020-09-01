@@ -3,19 +3,23 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    
+
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
-body
-{
-    display:flex;
+
+body {
+    display: flex;
     flex-direction: column;
-    background: -webkit-linear-gradient(to right, #FF6B6B, #556270);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FF6B6B, #556270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #FF6B6B, #556270);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF6B6B, #556270);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+
 section {
     display: flex;
     flex-direction: column;
@@ -23,16 +27,17 @@ section {
     justify-content: center;
     height: 100vh;
     line-height: 1.6;
-   
 
 
-    
-   
-    
+
+
+
+
 }
-section .content { 
+
+section .content {
     position: absolute;
-    
+
 }
 
 section .content h2 {
@@ -110,7 +115,8 @@ section .menu a:hover {
         overflow: hidden;
         width: 100%;
         height: 180px;
-        z-index: 1;  /* fallback for old browsers */
+        z-index: 1;
+        /* fallback for old browsers */
 
 
 
@@ -139,7 +145,7 @@ section .content .buttonToAbout {
     border-style: solid;
     border-color: white;
     text-align: center;
-    max-width: 200px;
+    max-width: 300px;
     font-size: 5vh;
     padding: 1vh;
     margin: auto;
@@ -147,6 +153,8 @@ section .content .buttonToAbout {
     position: relative;
     transition: 0.5s ease-in-out;
     border-radius: 25px;
+    text-decoration: none;
+
 }
 
 section .content .buttonToAbout a {
@@ -159,31 +167,39 @@ section .content .buttonToAbout:hover {
     border-color: #1dcdfe;
 }
 
-.about{
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
     padding-top: 100px;
     height: 100vh;
-    
+
 }
 
-.about h1{
+.about h1 {
     color: white;
-     font-size:4vmax;
-     font-weight: 800;
+    font-size: 4vmax;
+    font-weight: 800;
 }
 
-.aboutText{
+.aboutText {
+    max-width: 1300px;
     padding: 5vh 10vw 10vh 10vw;
-    color:white;
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
-    font-size :18px;
+    font-size: 1em;
     font-weight: 600;
 }
 
-.project{
+.LargerText {
+    font-size: 2em;
+    padding: 0px 5px 0px 10px;
+    opacity: 1;
+    color: rgba(255, 255, 255, 1);
+}
+
+.project {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,13 +208,13 @@ section .content .buttonToAbout:hover {
     height: 100vh;
 }
 
-.project h1{
+.project h1 {
     font-size: 4vmax;
     color: white;
 
 }
 
-.award{
+.award {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,9 +222,33 @@ section .content .buttonToAbout:hover {
     padding-top: 100px;
     height: 100vh;
 }
-.award h1{
+
+.award h1 {
     font-size: 4vmax;
     color: white;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 100px;
+    height: 100vh;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* 
     project button but so buggy decided to remove and use scroll instead;
 .buttonToProject {
@@ -238,4 +278,4 @@ section .content .buttonToAbout:hover {
     border-color: #1dcdfe;
 }
 
-*/ 
+*/
