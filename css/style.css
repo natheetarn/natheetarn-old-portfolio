@@ -204,7 +204,7 @@ section .content .buttonToAbout:hover {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    padding-top: 100px;
+    padding-top: 200px;
     height: 100vh;
 }
 
@@ -229,13 +229,14 @@ section .content .buttonToAbout:hover {
 }
 
 
-.skills {
+.links a{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
     padding-top: 100px;
-    height: 100vh;
+    text-decoration: none;
+    color: white;
 
 }
 
