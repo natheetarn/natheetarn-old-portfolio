@@ -199,7 +199,7 @@ section .content .buttonToAbout:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.Education {
+.education {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,7 +208,7 @@ section .content .buttonToAbout:hover {
     height: 100vh;
 }
 
-.Education h1 {
+.education h1 {
     font-size: 4vmax;
     color: white;
 
