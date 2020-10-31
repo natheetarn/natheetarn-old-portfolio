@@ -266,7 +266,7 @@ section .content .buttonToAbout:hover {
     
 }
 
-.ach div{
+.ach >div{
     background-color: rgba(255, 255, 255, 1);
     width: 40vmax;
     height: 36vmax;
